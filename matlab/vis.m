@@ -1,4 +1,4 @@
-load('bolbs.mat');
+load('m.mat');
 % 标准化，归一化数据
 X = standard_scalar(X);
 % rbf距离

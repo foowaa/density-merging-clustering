@@ -7,3 +7,4 @@ for i=1:num_clusters
     scatter(X(labels==i,1),X(labels==i,2),type);
     hold on
 end
+title('cluster result');

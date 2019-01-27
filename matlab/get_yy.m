@@ -1,6 +1,6 @@
 function [yy, p] = get_yy(dist,r1,r2)
 %dist: 距离矩阵；r1：阈值；r2：阈值
-rho = r1*r2
+fprintf('rho: %.4f\n', r1*r2);
 [m,~] = size(dist);
 %dist的每一行大于r1的元素个数
 len_y = sum(dist>r1,2);
