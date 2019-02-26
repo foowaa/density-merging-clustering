@@ -8,9 +8,9 @@ X = standard_scalar(X);
 dist = rbf(X);
 % 得到yy
 % 密度=r1*r2
-[yy, p] = get_yy(dist,0.95,250);
+[yy, p] = get_yy(dist,0.8,200);
 % 得到qm
-qm=get_qm(yy);
+qm=get_qm(yy,0.5);
 % 画出图的连通性质
 plot_graph(qm);
 % 得到连通分量
@@ -21,7 +21,7 @@ center=get_center(clus_result, X);
 % load('center.mat');
 plot_scatter_center(X,center);
 % 聚类
-labels=cluster(center,X);
+labels=cluster_by_distance(center,X);
 % % 画出结果
 plot_cluster(X,labels);
 % 计算 nmi

@@ -1,4 +1,4 @@
-function labels = cluster(center, X)
+function labels = cluster_by_distance(center, X)
 % 计算每个点到clu_result 的距离，以此判定应该属于哪个 cluster
 [m,~]=size(X);
 dist_center = zeros(length(center),m,1);
