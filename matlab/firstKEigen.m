@@ -1,4 +1,5 @@
 function [firstKVector,firstKLambda]=firstKEigen(A,k)
+% https://www.ctolib.com/topics/75070.html
 % A是图的邻接矩阵，k表示前k小
 % 返回firstKVector表示A矩阵归一化Laplacian的前k小特征向量；
 % 返回firstKLambda表示A矩阵归一化Laplacian的前k小特征值
